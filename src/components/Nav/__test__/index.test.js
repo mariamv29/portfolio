@@ -8,7 +8,7 @@ afterEach(cleanup);
 describe("Nav component renders", () => {
   it("renders", () => {
     render(<Nav />);
-  })
+  });
   it("matches snapshot", () => {
     const { asFragment } = render(<Nav />);
     expect(asFragment()).toMatchSnapshot();

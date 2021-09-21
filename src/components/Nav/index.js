@@ -1,7 +1,7 @@
 import React from "react";
 
 function Nav() {
-    const tabs = ['Home', 'About', 'Work', 'Contact']
+    // const tabs = ['Home', 'About', 'Work', 'Contact']
   return (
     <header className="flex-row px-1">
       <h2>
