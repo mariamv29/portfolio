@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import { capitalizeFirstLetter } from "../../utils/helpers";
 import PhotoList from "../PhotoList";
 
-function Portfolio({}) {
+function Portfolio() {
   const [projects] = useState([
     {
       name: "projects",
@@ -11,7 +11,7 @@ function Portfolio({}) {
     },
   ]);
 
-  // const [setCurrentProjects] = useState(projects[0]);
+  const [setCurrentProjects] = useState(projects[0]);
 
   return (
     <section>

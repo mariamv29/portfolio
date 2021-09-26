@@ -1,9 +1,13 @@
-import React from "react";
+import * as React from "react";
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
 
 function About() {
   return (
     <section className="my-5">
-      <h1 id="about">Welcome to my page!</h1>
+      <Stack direction="row" spacing={2}>
+      <Avatar alt="Maria Mireles" src="/static/images/avatar/1.jpg" />
+      </Stack>
       <p>
         {" "}
         Hi, welcome to my page! Let me introduce myself, my name is Maria

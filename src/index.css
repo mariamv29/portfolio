@@ -9,7 +9,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: 50%;
-  font-family: papyrus;
+  font-family: 'Mukta', sans-serif;
 }
 
 header {
@@ -21,11 +21,11 @@ header {
   position: sticky;
   top: 0;
 }
+
 header h2 {
   font-size: 50px;
-  color: #fafafa;
- 
 }
+
 header nav ul {
   margin-bottom: 10%;
   font-size: 25px;
@@ -33,11 +33,13 @@ header nav ul {
   flex-wrap: wrap;
   list-style: none;
 }
-
+header nav ul a {
+  color: white;
+}
 header a {
   text-decoration: none;
   padding: 10px 15px;
-  color: #fafafa; 
+  color: #000000; 
 }
 
 header nav ul li a:hover {
