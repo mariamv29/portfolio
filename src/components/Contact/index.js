@@ -33,21 +33,21 @@ function ContactForm() {
       }
     }
   };
-
+  
   return (
     <section>
          <form id="contact-form" onSubmit={handleSubmit}>
-      <h1>Contact</h1>
+      <h1 id="contact-text">Contact</h1>
       <Box
         component="form"
         sx={{
-          "& > :not(style)": { m: 1, width: "25ch" },
+            '& .MuiTextField-root': { m: 1, width: "25ch" },
         }}
         noValidate
         autoComplete="off"
       >
-        <div>
-          <TextField
+         <div>
+          <TextField style={{ backgroundColor: "white", width: '50ch' }}
             id="filled-name"
             label="Name"
             multiline
@@ -57,7 +57,7 @@ function ContactForm() {
           />
         </div>
         <div>
-          <TextField
+          <TextField style={{ backgroundColor: "white", width: '50ch' }}
             id="filled-email"
             label="Email"
             multiline
@@ -67,7 +67,7 @@ function ContactForm() {
             variant="filled" />
         </div>
         <div>
-          <TextField
+          <TextField style={{ backgroundColor: "white", width: '50ch' }}
             id="standard-multiline-static"
             label="Message"
             multiline
@@ -77,7 +77,7 @@ function ContactForm() {
           />
             <p className="error-text">{errorMessage}</p>
         </div>
-        <button data-testid="button" type="submit">Submit</button>
+        <button data-testid="button" type="submit"> Submit</button>
       </Box>
       </form>
     </section>

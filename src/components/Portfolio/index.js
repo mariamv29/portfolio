@@ -30,7 +30,7 @@ function Portfolio() {
           <Typography gutterBottom variant="h5" component="div">
             Taskinator{projects.name}
           </Typography>
-            <div class="flip-card-back"></div>
+            <div className="flip-card-back"></div>
         </CardContent>
       </div>
     </Card>
