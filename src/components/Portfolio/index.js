@@ -1,9 +1,12 @@
-import React, { useState } from "react";
-// import { capitalizeFirstLetter } from "../../utils/helpers";
+import React from "react";
+import Card from "@mui/material/Card";
+import CardMedia from "@mui/material/CardMedia";
 import PhotoList from "../PhotoList";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
 
 function Portfolio() {
-  const [projects] = useState([
+  const projects = ([
     {
       name: "projects",
       description:
@@ -11,22 +14,29 @@ function Portfolio() {
     },
   ]);
 
-  const [setCurrentProjects] = useState(projects[0]);
+  // const [setCurrentProjects] = useState(projects[0]);
 
   return (
-    <section>
+    <Card sx={{ maxWidth: 345 }}>
       <div className="flip-card">
         <div className="image-container">
           <div className="flip-card-front">
-            <PhotoList />
-          </div>
-          <div class="flip-card-back">
-            <h1>{projects.name}</h1>
-            <p>{projects.description}</p>
+            <CardMedia >
+              {" "}
+              <PhotoList />
+            </CardMedia>
           </div>
         </div>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            Taskinator{projects.name}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            <div class="flip-card-back"></div>
+          </Typography>
+        </CardContent>
       </div>
-    </section>
+    </Card>
   );
 }
 
