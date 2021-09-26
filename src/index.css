@@ -5,13 +5,12 @@
 }
 
 body {
-  background-image: url("../src/assets/background/beach.jpg");
+  background-image: url("../src/assets/background/volcano.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: 80%;
+  background-position: 50%;
   font-family: papyrus;
 }
-
 
 header {
   padding: 20px 35px;
@@ -21,13 +20,11 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  backdrop-filter:blur(50px);
 }
 header h2 {
   font-size: 50px;
   color: #fafafa;
-  text-decoration-line:underline;
-  text-shadow: 0 0 10px rgb(100, 89, 89);
+ 
 }
 header nav ul {
   margin-bottom: 10%;
@@ -37,59 +34,54 @@ header nav ul {
   list-style: none;
 }
 
-header  a {
+header a {
+  text-decoration: none;
   padding: 10px 15px;
-  color: #fafafa;
-  text-decoration-line: overline;
-  text-shadow: 0 0 5px rgb(100, 89, 89);
+  color: #fafafa; 
 }
 
 header nav ul li a:hover {
-  background: rgb(152, 202, 222);
-  border-radius: 2px;
+  color: rgb(112, 6, 6);
+  border-radius: 5px;
 }
 
-.img {
-  width: 40%;
-  height: 20%;
+p {
+  backdrop-filter:blur(50px);
+  display: block;
 }
+
+/*PROJECT/CHALLENGE STYLING*/
 
 .image-container {
   position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .image-container {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #bbb;
   color: black;
 }
 
-/* Style the back side */
 .flip-card-back {
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
 }
 img {
-  width:500px;
-  height:300px;
+  width: 500px;
+  height: 300px;
 }

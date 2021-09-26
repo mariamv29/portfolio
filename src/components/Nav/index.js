@@ -1,7 +1,6 @@
 import React from "react";
 
 function Nav() {
-    // const tabs = ['Home', 'About', 'Work', 'Contact']
   return (
     <header className="flex-row px-1">
       <h2>
@@ -12,13 +11,19 @@ function Nav() {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about">About me</a>
+            <a data-testid="about" href="#about">
+              About me
+            </a>
           </li>
           <li>
-          <a data-testid="mywork" href="#mywork">Portfolio</a>
+            <a data-testid="mywork" href="#mywork">
+              Portfolio
+            </a>
           </li>
           <li>
-          <a data-testid="contact" href="#contact">Contact</a>
+            <a data-testid="contact" href="#contact">
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
