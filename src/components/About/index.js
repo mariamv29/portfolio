@@ -1,14 +1,15 @@
 import * as React from "react";
-import Avatar from "@mui/material/Avatar";
-import Stack from "@mui/material/Stack";
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
 
 function About() {
   return (
-    <section className="my-5">
+    <section className="box">
       <Stack direction="row" spacing={2}>
-        <Avatar alt="Maria Mireles" src="/static/images/avatar/1.jpg" />
+      <Avatar alt="Maria Mireles" src="/static/images/avatar/1.jpg" />
       </Stack>
-      <h4> Austin-Based Full Stack Web Developer</h4>
+      <h4> Austin-Based Full Stack Web-Developer
+        </h4>
       <p>
         {" "}
         Hi, welcome to my page! Let me introduce myself, my name is Maria

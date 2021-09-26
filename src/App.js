@@ -3,21 +3,21 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Contact from './components/Contact'
 
 function App() {
   return (
-   <div className="flex-column justify-flex-start min-100-vh">
+    <div>
       <div>
         <Nav></Nav>
         <main>
           <About></About>
           <Portfolio></Portfolio>
+          <Contact></Contact>
         </main>
       </div>
-      
-      <footer>
+    
         <Footer />
-      </footer>
     </div>
   );
 }

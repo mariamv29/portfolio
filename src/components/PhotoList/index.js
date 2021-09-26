@@ -15,7 +15,7 @@ function PhotoList() {
  // ]);
   return (
     <div>
-      <img src={photo} alt="challenge example" />
+      <img src={photo} height="140" alt="challenge example" />
     </div>
   );
 }
