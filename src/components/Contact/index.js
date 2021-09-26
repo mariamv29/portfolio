@@ -1,11 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
+
+
+  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+  const [errorMessage, setErrorMessage] = useState('');
+  const { name, email, message } = formState;
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!errorMessage) {
+      setFormState({ [e.target.name]: e.target.value });
+      console.log('Form', formState);
+    }
+  };
+  const handleChange = (e) => {
+    if (e.target.name === 'email') {
+      const isValid = validateEmail(e.target.value);
+      if (!isValid) {
+        setErrorMessage('Your email is invalid.');
+      } else {
+        setErrorMessage('');
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required.`);
+      } else {
+        setErrorMessage('');
+      }
+    }
+  };
+
   return (
     <section>
-      <h1>Contact Me</h1>
+         <form id="contact-form" onSubmit={handleSubmit}>
+      <h1>Contact</h1>
       <Box
         component="form"
         sx={{
@@ -18,9 +50,9 @@ function ContactForm() {
           <TextField
             id="filled-name"
             label="Name"
-            InputLabelProps={{
-              shrink: true,
-            }}
+            multiline
+            value={name}
+            onChange={handleChange}
             variant="filled"
           />
         </div>
@@ -28,23 +60,26 @@ function ContactForm() {
           <TextField
             id="filled-email"
             label="Email"
-            InputLabelProps={{
-              shrink: true,
-            }}
-            variant="filled"
-          />
+            multiline
+            maxRows={4}
+            value={email}
+            onChange={handleChange}
+            variant="filled" />
         </div>
         <div>
           <TextField
-            id="filled-message"
+            id="standard-multiline-static"
             label="Message"
-            InputLabelProps={{
-              shrink: true,
-            }}
-            variant="filled"
+            multiline
+            rows={7}
+            value={message}
+            variant="standard"
           />
+            <p className="error-text">{errorMessage}</p>
         </div>
+        <button data-testid="button" type="submit">Submit</button>
       </Box>
+      </form>
     </section>
   );
 }

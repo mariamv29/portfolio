@@ -1,8 +1,8 @@
 import React  from "react";
 
-import photo from "../../assets/small/taskinator.jpg";
+import photo from "../../assets/small/challenges/taskinator.jpg";
 
-function PhotoList() {
+function ProjectList() {
 //   const [photos] = useState([
 //     {
 //       name: "Taskinator",
@@ -15,9 +15,9 @@ function PhotoList() {
  // ]);
   return (
     <div>
-      <img src={photo} height="140" alt="challenge example" />
+      <img src={photo} height="140"  alt="challenge example" />
     </div>
   );
 }
 
-export default PhotoList;
+export default ProjectList;

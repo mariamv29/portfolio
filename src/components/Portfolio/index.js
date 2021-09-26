@@ -1,4 +1,4 @@
-import React from "react";
+import React  from "react";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import PhotoList from "../PhotoList";
@@ -21,8 +21,7 @@ function Portfolio() {
       <div className="flip-card">
         <div className="image-container">
           <div className="flip-card-front">
-            <CardMedia >
-              {" "}
+            <CardMedia height="140">
               <PhotoList />
             </CardMedia>
           </div>
@@ -31,9 +30,7 @@ function Portfolio() {
           <Typography gutterBottom variant="h5" component="div">
             Taskinator{projects.name}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
             <div class="flip-card-back"></div>
-          </Typography>
         </CardContent>
       </div>
     </Card>
