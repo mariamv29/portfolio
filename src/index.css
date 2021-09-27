@@ -62,6 +62,7 @@ header nav ul li a:hover {
   padding: 10px;
   backdrop-filter: blur(40px);
   display: block;
+  block-size: fit-content
 }
 
 p {
@@ -82,6 +83,37 @@ p {
   display: block;
   block-size: fit-content
 }
+
+.languages {
+  margin-top: 5vw;
+  width: 60%;
+  margin-left: 20vw;
+  height: 30vh;
+  border-style: solid;
+  border-width: 8px;
+  padding: 10px;
+  backdrop-filter: blur(40px);
+  display: block;
+  block-size: fit-content
+}
+.languages-bk {
+  margin-top: 3vw;
+  width: 60%;
+  margin-left: 20vw;
+  height: 30vh;
+  border-style: solid;
+  border-width: 8px;
+  padding: 10px;
+  backdrop-filter: blur(40px);
+  display: block;
+  block-size: fit-content;
+  color: rgb(197, 197, 197);
+}
+ .download {
+  margin-top: 10vw;
+  text-align: center;
+ }
+
 /*PROJECT/CHALLENGE STYLING*/
 
 .image-container {

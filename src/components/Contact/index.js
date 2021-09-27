@@ -15,13 +15,13 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
-      setFormState({ [e.target.name]: e.target.value });
+      setFormState({ [e.target.label]: e.target.value });
       console.log("Form", formState);
     }
   };
   const handleChange = (e) => {
-    if (e.target.name === "email") {
-      const isValid = validateEmail(e.target.value);
+    if (e.target.label === "email") {
+      const isValid = validateEmail(e.target.value.label);
       if (!isValid) {
         setErrorMessage("Your email is invalid.");
       } else {
@@ -29,7 +29,7 @@ function ContactForm() {
       }
     } else {
       if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
+        setErrorMessage(`message is required.`);
       } else {
         setErrorMessage("");
       }
@@ -38,8 +38,9 @@ function ContactForm() {
 
   return (
     <section>
+    
       <form id="contact-form" onSubmit={handleSubmit}>
-        <h1 id="contact-text">Contact</h1>
+          <h1 id="contact-text">Contact</h1>  
         <Box
           component="form"
           sx={{
@@ -51,15 +52,14 @@ function ContactForm() {
           <TextField
             style={{ backgroundColor: "white", width: "50ch" }}
             label="Name"
-            id="filled-hidden-label-small"
             defaultValue={name}
             variant="filled"
             size="small"
+            onBlur={handleChange}
           />
           <TextField
             style={{ backgroundColor: "white", width: "50ch" }}
             label="Email"
-            id="filled-hidden-label-small"
             defaultValue={email}
             variant="filled"
             size="small"
@@ -68,20 +68,26 @@ function ContactForm() {
           <TextField
             style={{ backgroundColor: "white", width: "50ch" }}
             label="Message"
-            id="filled-hidden-label-small"
             multiline
             rows={7}
             defaultValue={message}
             variant="filled"
             size="small"
+            onBlur={handleChange}
           />
+           </Box>
+          {errorMessage && (
+            <div>
+              <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
           <div>
-          <button data-testid="button" type="submit">
-            {" "}
-            Submit
-          </button>
+            <button data-testid="button" type="submit">
+              {" "}
+              Submit
+            </button>
           </div>
-        </Box>
+       
       </form>
     </section>
   );
