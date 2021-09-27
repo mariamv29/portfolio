@@ -1,8 +1,9 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Nav from "./components/Nav";
 import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
   const [currentPage, handlePageChange] = useState("About");
@@ -11,22 +12,21 @@ function App() {
     switch (currentPage) {
       case "Portfolio":
         return <Portfolio />;
-        case "Contact":
-        return <Contact />
-default: return <About />
+      case "Contact":
+        return <Contact />;
+      case "Resume":
+        return <Resume />;
+      default:
+        return <About />;
     }
-  }
-
+  };
 
   return (
     <div>
-      <Nav currentPage ={currentPage} handlePageChange={handlePageChange}
-     > </Nav>
-     <div>
-       {
-       renderPage(currentPage)
-       }
-     </div>
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange}>
+        {" "}
+      </Nav>
+      <div>{renderPage(currentPage)}</div>
     </div>
   );
 }
