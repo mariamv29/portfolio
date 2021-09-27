@@ -29,7 +29,7 @@ function ContactForm() {
       }
     } else {
       if (!e.target.value.length) {
-        setErrorMessage(`message is required.`);
+        setErrorMessage(`Message is required.`);
       } else {
         setErrorMessage("");
       }

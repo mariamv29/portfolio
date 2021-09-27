@@ -1,16 +1,18 @@
-import React  from "react";
-import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
+import React, {useState } from "react";
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 import PhotoList from "../PhotoList";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
 
 function Portfolio() {
-  const projects = ([
+  const [challenges] = useState([
     {
-      name: "projects",
+      name: "project",
       description:
-        "Recent projects with respective github and deployment links.",
+      "Recent projects with respective github and deployment links.",
     },
   ]);
 
@@ -18,21 +20,24 @@ function Portfolio() {
 
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <div className="flip-card">
-        <div className="image-container">
-          <div className="flip-card-front">
-            <CardMedia height="140">
-              <PhotoList />
-            </CardMedia>
-          </div>
-        </div>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Taskinator{projects.name}
-          </Typography>
-            <div className="flip-card-back"></div>
-        </CardContent>
-      </div>
+      <CardMedia>
+        <PhotoList/>
+       
+        </CardMedia>
+      <CardContent>
+         {challenges.map((challenge) => (
+        <Typography key={challenge.name} gutterBottom variant="h5" component="div"   >
+        {challenge.name}
+         
+        </Typography>
+   ))}
+        <Typography  variant="body2" color="text.secondary">
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">View</Button>
+        <Button size="small">GitHub</Button>
+      </CardActions>
     </Card>
   );
 }

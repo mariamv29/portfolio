@@ -3,7 +3,9 @@ import React from "react";
 function Resume() {
   return (
     <section>
-      <h2 className="download">Download Resume</h2>
+        <a href='../../assets/resume/resume.pdf' download> 
+      <h2 className="download">Click to download resume</h2>
+      </a>
 
       <div className="languages">
         <h3> Frontend: </h3>

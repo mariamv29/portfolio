@@ -6,12 +6,22 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 
 function App() {
+
+  const [challenges] = useState([
+    {
+      name: "project",
+      description:
+      "Recent projects with respective github and deployment links.",
+    },
+  ]);
+
   const [currentPage, handlePageChange] = useState("About");
 
   const renderPage = () => {
     switch (currentPage) {
       case "Portfolio":
-        return <Portfolio />;
+        return <Portfolio 
+        challenges={challenges}/>;
       case "Contact":
         return <Contact />;
       case "Resume":

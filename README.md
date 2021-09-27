@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# React Portfolio
+
+## Description 
+Personal portfolio build with React. 
+
+![Page Photo](./src/assets/page/deploy.jpg)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +75,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Contributing / Credits
+
+[mariamv29](https://github.com/mariamv29/HTML-generator.git)

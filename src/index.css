@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary: rgb(227, 227, 227);
+  --secondary: #000000;
+}
 
 body {
   background-image: url("../src/assets/background/volcano.jpg");
@@ -38,12 +42,12 @@ header nav ul {
   list-style: none;
 }
 header nav ul a {
-  color: white;
+  color: var(--primary)
 }
 header a {
   text-decoration: none;
   padding: 10px 15px;
-  color: #000000;
+  color: var(--secondary);
 }
 
 header nav ul li a:hover {
@@ -66,7 +70,7 @@ header nav ul li a:hover {
 }
 
 p {
-  color: rgb(197, 197, 197);
+  color: var(--primary)
 }
 
 /*CONTACT FORM STYLING*/
@@ -107,9 +111,11 @@ p {
   backdrop-filter: blur(40px);
   display: block;
   block-size: fit-content;
-  color: rgb(197, 197, 197);
+  color: var(--primary)
 }
  .download {
+   text-decoration: none;
+   color: var(--secondary);
   margin-top: 10vw;
   text-align: center;
  }
@@ -138,12 +144,12 @@ p {
 
 .flip-card-front {
   background-color: #bbb;
-  color: black;
+  color: var(--secondary);
 }
 
 .flip-card-back {
   background-color: dodgerblue;
-  color: white;
+  color: var(--primary);
   transform: rotateY(180deg);
 }
 
@@ -189,4 +195,5 @@ footer {
   z-index: 1;
   width: 100%;
   text-align: center;
+  text-decoration: none;
 }
