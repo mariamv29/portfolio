@@ -19,10 +19,11 @@ function Resume() {
         <h3>Backend:</h3>
         <li>MySQL </li>
         <li>MongoDB </li>
-        <li>Express </li>
-        <li>Node </li>
-        <li>Handlebars </li>
-        <li>Webpack </li>
+        <li>Express.js </li>
+        <li>Node.js </li>
+        <li>Handlebars.js </li>
+        <li>GraphQL </li>
+
       </div>
       <a style={{ textDecoration: 'none' }} href='../../assets/resume/resume.pdf' download> 
       <h2 className="download"> Click to download resume</h2>

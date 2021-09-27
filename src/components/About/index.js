@@ -12,11 +12,13 @@ function About() {
 
       <p>
         {" "}
-        Welcome to my space! Let me introduce myself, my name is Maria
-        Mireles, a 24 year old coffee-lover. At the moment, I am remotly attending a coding boot camp at the University of Texas at
-        Austin. Where with no prior coding knowledge, I have expanded my programming skills from frontend to backend.
-         To date, I have been coding for about 5 months. Take a look around, send me a message and 
-        let us chat some code! {" "}
+        Welcome to my tiny space in the World Wide Web! Let me briefly introduce
+        myself. My name is Maria Mireles, a 24-year-old coffee-lover. I am soon
+        to complete a fully remote coding boot camp through the University of
+        Texas at Austin. Despite having no prior coding experience, I have been
+        able to expand my front-end and back-end programming skills
+        and abilities. To date, I have been coding for about 5 months. 
+        Look around and feel free to reach out. Let us chat some code!{" "}
       </p>
     </section>
   );

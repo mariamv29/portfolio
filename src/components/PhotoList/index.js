@@ -28,9 +28,9 @@ function PhotoList(challenge) {
 
   const currentPhotos = photos.filter((photo) => photo.challenge === challenge);
 
-  const setCurrentPhoto = (image, i) => {
-    ({ ...image, index: i });
-  };
+  // const setCurrentPhoto = (image, i) => {
+  //   ({ ...image, index: i });
+  // };
 
   return (
     <div>
