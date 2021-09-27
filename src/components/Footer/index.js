@@ -6,20 +6,20 @@ import EmailIcon  from "@mui/icons-material/Email";
 const Footer = () => {
   return (
     <footer>
-      <div className="text-center">
-          <a href="https://www.linkedin.com/in/maria-erika-mireles-7b7b27210/">
+      <div>
+          <a style={{ textDecoration: 'none', color: "#f9461af8"  }} href="https://www.linkedin.com/in/maria-erika-mireles-7b7b27210/">
         <LinkedInIcon />
         </a>
         {"   "}
-        <a href="mailto:mireles335@gmail.com? subject=subject text">
+        <a style={{ textDecoration: 'none', color: "#f9461af8" }} href="mailto:mireles335@gmail.com? subject=subject text">
         <EmailIcon />
         </a>
         {"   "}
-        <a href="https://github.com/mariamv29">
+        <a style={{ textDecoration: 'none', color: "#f9461af8" }} href="https://github.com/mariamv29">
         <FaGithub /> {"   "}
         </a>
       </div>
-      <div className="container">&copy;2021 by Maria Mireles</div>
+      <div style={{color: "#f9461af8" }}className="container">&copy;2021 by Maria Mireles</div>
     </footer>
   );
 };

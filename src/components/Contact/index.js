@@ -42,7 +42,6 @@ function ContactForm() {
       <form id="contact-form" onSubmit={handleSubmit}>
           <h1 id="contact-text">Contact</h1>  
         <Box
-          component="form"
           sx={{
             "& .MuiTextField-root": { m: 1, width: "25ch" },
           }}

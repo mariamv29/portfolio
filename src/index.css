@@ -12,7 +12,7 @@ body {
   background-image: url("../src/assets/background/volcano.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: 50%;
+  background-position: 90%;
   font-family: "Mukta", sans-serif;
 }
 
@@ -30,7 +30,8 @@ header h2 {
   font-size: 40px;
   font-weight: normal;
 }
-h4, #contact-text {
+h4,
+#contact-text {
   font-size: 25px;
 }
 
@@ -42,7 +43,7 @@ header nav ul {
   list-style: none;
 }
 header nav ul a {
-  color: var(--primary)
+  color: var(--primary);
 }
 header a {
   text-decoration: none;
@@ -66,11 +67,11 @@ header nav ul li a:hover {
   padding: 10px;
   backdrop-filter: blur(40px);
   display: block;
-  block-size: fit-content
+  block-size: fit-content;
 }
 
 p {
-  color: var(--primary)
+  color: var(--primary);
 }
 
 /*CONTACT FORM STYLING*/
@@ -85,23 +86,23 @@ p {
   padding: 10px;
   backdrop-filter: blur(40px);
   display: block;
-  block-size: fit-content
+  block-size: fit-content;
 }
 
 .languages {
-  margin-top: 5vw;
+  margin-top: 15vw;
   width: 60%;
   margin-left: 20vw;
-  height: 30vh;
+  height: 28vh;
   border-style: solid;
   border-width: 8px;
   padding: 10px;
   backdrop-filter: blur(40px);
   display: block;
-  block-size: fit-content
+  block-size: fit-content;
 }
 .languages-bk {
-  margin-top: 3vw;
+  margin-top: 2vw;
   width: 60%;
   margin-left: 20vw;
   height: 30vh;
@@ -111,14 +112,13 @@ p {
   backdrop-filter: blur(40px);
   display: block;
   block-size: fit-content;
-  color: var(--primary)
+  color: var(--primary);
 }
- .download {
-   text-decoration: none;
-   color: var(--secondary);
-  margin-top: 10vw;
+.download {
+  color: #f9461af8;
+  margin-top: 2vw;
   text-align: center;
- }
+}
 
 /*PROJECT/CHALLENGE STYLING*/
 
@@ -157,18 +157,16 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 0 1px;
+  margin: 0 9px;
   background-color: rgb(249, 89, 26);
 }
 
 button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
-
 
 img {
   width: 100%;
@@ -188,7 +186,6 @@ img {
 }
 
 footer {
-  color: rgb(249, 89, 26);
   position: fixed;
   left: 0px;
   bottom: 0px;
