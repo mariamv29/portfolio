@@ -20,7 +20,6 @@ function Portfolio(props) {
         {challenges.map((challenge) => (
           <Typography
             key={challenge.name}
-            
             gutterBottom
             variant="h5"
           >
