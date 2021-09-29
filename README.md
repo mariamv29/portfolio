@@ -5,6 +5,9 @@ Personal portfolio build with React.
 
 ![Page Photo](./src/assets/page/deploy.jpg)
 
+## Background Image Citation
+Elliot, T. (2021). The volcanic eruption at Geldingadalir, Fagradalsfjall. https://unsplash.com/photos/2Z63y2F3S20. Retrieved September 26, 2021. 
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
