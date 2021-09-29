@@ -8,8 +8,7 @@ import Typography from "@mui/material/Typography";
 import PhotoList from "../PhotoList";
 
 function Portfolio(props) {
- const { projets =[]
-} = props
+ const { currentProject } = props
 
 
   return (
@@ -20,7 +19,7 @@ function Portfolio(props) {
       <CardContent>
           <Typography >
             {projects.map(project)}
-           <PhotoList /> 
+           <PhotoList category={currentProject.name} /> 
         
           </Typography>
         <Typography variant="body2" color="text.secondary"></Typography>
