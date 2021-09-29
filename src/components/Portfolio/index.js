@@ -18,8 +18,8 @@ function Portfolio(props) {
       </CardMedia>
       <CardContent>
           <Typography >
-            {projects.map(project)}
-           <PhotoList category={currentProject.name} /> 
+            {/* {projects.map(project)} */}
+           <PhotoList /> 
         
           </Typography>
         <Typography variant="body2" color="text.secondary"></Typography>
