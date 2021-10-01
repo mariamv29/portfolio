@@ -48,25 +48,23 @@ function Portfolio() {
     },
   ];
   return (
-  
+      <div className="project-container">
+        {projects.map(({ name, src, github, deployment }) => (
+          <li className="projects" key={{ name, src, github, deployment }}>
+            <a href={github} className="git">
+              github
+            </a>
+            <a href={deployment} className="demo">Website</a>
 
-    
-  <div>
-      <ul className="navabs">
-      {projects.map(({name, src, github}) => (
-        <li className="navem" key={{name, src, github}}>
-          <a
-            href={github}
-            className="hello">
-          </a>
-          <h1>{name}</h1>
-          <img src={src} alt={name}></img>
-        </li>
-      ))}
-    </ul>
+            <h4 className="title">{name}</h4>
+            <img
+              src={src}
+              alt={name}
+              style={{ width: "500px", height: "300px" }}
+            ></img>
+          </li>
+        ))}
       </div>
- 
   );
 }
 export default Portfolio;
-

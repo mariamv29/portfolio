@@ -15,7 +15,7 @@ const Footer = () => {
         <EmailIcon />
         </a>
         {"   "}
-        <a style={{ textDecoration: 'none', color: "#f9461af8", width:"24" }} href="https://github.com/mariamv29">
+        <a style={{ textDecoration: 'none', color: "#f9461af8" }} href="https://github.com/mariamv29">
         <FaGithub /> {"   "}
         </a>
       </div>
