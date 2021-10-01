@@ -4,8 +4,8 @@
 Personal portfolio build with React. 
 
 ![Page Photo](./src/assets/page/deploy.jpg)
-[Deployment Link](https://mariamv29.github.io/portfolio/)
-[Linked In](https://www.linkedin.com/in/maria-erika-mireles-7b7b27210/)
+* [Deployment Link](https://mariamv29.github.io/portfolio/)
+* [Linked In](https://www.linkedin.com/in/maria-erika-mireles-7b7b27210/)
 
 ## Getting Started with Create React App
 
