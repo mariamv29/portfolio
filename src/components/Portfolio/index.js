@@ -1,12 +1,4 @@
 import React from "react";
-// import Card from "@mui/material/Card";
-// import CardActions from "@mui/material/CardActions";
-// import CardContent from "@mui/material/CardContent";
-// import CardMedia from "@mui/material/CardMedia";
-// import Button from "@mui/material/Button";
-// import Typography from "@mui/material/Typography";
-// import PhotoList from "../PhotoList";
-// import photo from "../../assets/challenge/0.jpg"
 
 function Portfolio() {
   const projects = [
@@ -17,52 +9,58 @@ function Portfolio() {
       deployment: "https://infinite-ravine-50293.herokuapp.com/",
     },
     {
-      name: "healthyCraves",
+      name: "Healthy Craves",
       src: require("../../assets/challenge/1.jpg").default,
       github: "https://github.com/mariamv29/healthy-craves.git",
       deployment: "https://mariamv29.github.io/healthy-craves/",
     },
     {
-      name: " pizzaHut",
+      name: "Pizza Hut",
       src: require("../../assets/challenge/2.jpg").default,
       github: "https://github.com/mariamv29/libro-fy.git",
       deployment: "https://obscure-hamlet-00557.herokuapp.com/",
     },
     {
-      name: "budgetTracker ",
+      name: "Budget Tracker ",
       src: require("../../assets/challenge/3.jpg").default,
-      github: "https://github.com/mariamv29/libro-fy.git",
+      github: "https://github.com/mariamv29/buget-tracker.git",
       deployment: "https://rocky-forest-04357.herokuapp.com/",
     },
     {
-      name: "gitItDone",
+      name: "Model View Controller",
       src: require("../../assets/challenge/4.jpg").default,
-      github: "https://github.com/mariamv29/git-it-done.git",
-      deployment: "https://libro-fy.herokuapp.com",
+      github: "https://github.com/mariamv29/model-view-controller",
+      deployment: "https://model-view.herokuapp.com/",
     },
     {
-      name: "taskinator ",
+      name: "Deep Thoughts",
       src: require("../../assets/challenge/5.jpg").default,
-      github: "https://github.com/mariamv29/taskinator.git",
-      deployment: "https://mariamv29.github.io/taskinator/",
+      github: "https://github.com/mariamv29/deep-thoughts.git",
+      deployment: "https://serene-mesa-47542.herokuapp.com/",
     },
   ];
   return (
-      <div className="project-container">
+    <div className="cards">
         {projects.map(({ name, src, github, deployment }) => (
-          <li className="projects" key={{ name, src, github, deployment }}>
-            <a href={github} className="git">
-              github
-            </a>
-            <a href={deployment} className="demo">Website</a>
-
-            <h4 className="title">{name}</h4>
+          <ul className="projects" key={{ name, src, github, deployment }}>
             <img
               src={src}
               alt={name}
-              style={{ width: "500px", height: "300px" }}
+              style={{ width: "400px", height: "250px" }}
             ></img>
-          </li>
+    
+            <div className="portfolio-links">
+                <h4 className="title">{name}</h4>
+              <a href={github} className="git">
+                Github
+              </a>
+              <a href={deployment} className="demo">
+                Website
+              </a>
+
+            
+            </div>
+          </ul>
         ))}
       </div>
   );
