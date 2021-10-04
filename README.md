@@ -1,7 +1,7 @@
 # React Portfolio
 
 ## Description 
-Personal portfolio build with React. 
+Personal portfolio built with React. 
 
 ![Page Photo](./src/assets/page/deploy.jpg)
 * [Deployment Link](https://mariamv29.github.io/portfolio/)
