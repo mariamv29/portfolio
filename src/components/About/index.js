@@ -7,7 +7,7 @@ function About() {
     <section className="box">
       <Stack direction="row" spacing={2}>
         <Avatar alt="Maria Mireles" src="/static/images/avatar/1.jpg" />
-        <h4> Austin-Based Full Stack Web-Developer</h4>
+        <h4 className="intro"> Austin-Based Full Stack Web-Developer</h4>
       </Stack>
 
       <p>

@@ -48,8 +48,8 @@ function ContactForm() {
           noValidate
           autoComplete="off"
         >
-          <TextField
-            style={{ backgroundColor: "white", width: "50ch" }}
+          <TextField 
+            style={{ backgroundColor: "white", width: "97.5%" }}
             label="Name"
             defaultValue={name}
             variant="filled"
@@ -57,7 +57,7 @@ function ContactForm() {
             onBlur={handleChange}
           />
           <TextField
-            style={{ backgroundColor: "white", width: "50ch" }}
+            style={{ backgroundColor: "white", width: "97.5%" }}
             label="Email"
             defaultValue={email}
             variant="filled"
@@ -65,7 +65,7 @@ function ContactForm() {
             onBlur={handleChange}
           />
           <TextField
-            style={{ backgroundColor: "white", width: "50ch" }}
+            style={{ backgroundColor: "white", width: "97.5%"  }}
             label="Message"
             multiline
             rows={7}

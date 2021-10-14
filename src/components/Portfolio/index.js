@@ -3,6 +3,12 @@ import React from "react";
 function Portfolio() {
   const projects = [
     {
+      name: "Farm-Go Market",
+      src: require("../../assets/challenge/6.jpg").default,
+      github: "https://github.com/mariamv29/farm-go.git",
+      deployment: "https://farm-gomarket.herokuapp.com/",
+    },
+    {
       name: "Libro-Fy",
       src: require("../../assets/challenge/0.jpg").default,
       github: "https://github.com/mariamv29/libro-fy.git",
@@ -32,23 +38,19 @@ function Portfolio() {
       github: "https://github.com/mariamv29/model-view-controller",
       deployment: "https://model-view.herokuapp.com/",
     },
-    {
-      name: "Deep Thoughts",
-      src: require("../../assets/challenge/5.jpg").default,
-      github: "https://github.com/mariamv29/deep-thoughts.git",
-      deployment: "https://serene-mesa-47542.herokuapp.com/",
-    },
+ 
   ];
   return (
+   <>
     <div className="cards">
-        {projects.map(({ name, src, github, deployment }) => (
+      <div> {projects.map(({ name, src, github, deployment }) => (
           <ul className="projects" key={{ name, src, github, deployment }}>
             <img
               src={src}
               alt={name}
               style={{ width: "400px", height: "250px" }}
             ></img>
-    
+   
             <div className="portfolio-links">
                 <h4 className="title">{name}</h4>
               <a href={github} className="git">
@@ -57,12 +59,14 @@ function Portfolio() {
               <a href={deployment} className="demo">
                 Website
               </a>
-
-            
             </div>
           </ul>
+        
+     
         ))}
+   </div>   
       </div>
+        </>
   );
 }
 export default Portfolio;

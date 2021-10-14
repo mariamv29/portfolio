@@ -6,7 +6,10 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 
 function App() {
-  const [currentPage, handlePageChange] = useState("About");
+  const [currentPage, handlePageChange] = useState(localStorage.getItem("currentPage"));
+
+localStorage.setItem("currentPage", currentPage)
+
 
   const renderPage = () => {
     switch (currentPage) {
@@ -18,7 +21,7 @@ function App() {
         return <Contact />;
       case "Resume":
         return <Resume />;
-      default:
+      default: 
         return <About />;
     }
   };
@@ -34,3 +37,6 @@ function App() {
 }
 
 export default App;
+
+
+
