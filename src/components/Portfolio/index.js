@@ -42,13 +42,15 @@ function Portfolio() {
   ];
   return (
    <>
-    <div className="cards">
-      <div> {projects.map(({ name, src, github, deployment }) => (
+    <div className="container">
+      <div className="cards" xs={2}
+      > 
+        {projects.map(({ name, src, github, deployment }) => (
           <ul className="projects" key={{ name, src, github, deployment }}>
             <img
               src={src}
               alt={name}
-              style={{ width: "400px", height: "250px" }}
+              style={{ width: "380px", height: "240px"}}
             ></img>
    
             <div className="portfolio-links">

@@ -65,11 +65,12 @@ header nav ul li a:hover {
   border-width: 8px;
   padding: 10px;
   backdrop-filter: blur(40px);
-  display: block; 
-   block-size: fit-content;
+  display: block;
+  block-size: fit-content;
 }
 
-p, .intro {
+p,
+.intro {
   color: var(--primary);
 }
 /*PORTFOLIO STYILING*/
@@ -83,6 +84,10 @@ p, .intro {
 }
 
 .projects {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
   border-style: solid;
   border-width: 8px;
   padding: 35px;
@@ -90,11 +95,10 @@ p, .intro {
   backdrop-filter: blur(40px);
 }
 
-.title{
+.title {
   margin-bottom: 10px;
 }
 .portfolio-links {
-
   text-align: center;
   color: var(--primary);
 }
@@ -162,11 +166,10 @@ p, .intro {
   text-align: center;
 }
 
-
 button {
   font-size: 1rem;
   text-decoration: none;
-  padding: 0.50rem 1rem;
+  padding: 0.5rem 1rem;
   border: none;
   outline: none;
   cursor: pointer;
@@ -204,7 +207,4 @@ footer {
   text-align: center;
   text-decoration: none;
 }
-
-
-/*MEDIA QUERY*/
 
