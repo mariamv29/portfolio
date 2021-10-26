@@ -166,7 +166,7 @@ p,
   text-align: center;
 }
 
-button {
+.btn {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -174,10 +174,10 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 9px;
-  background-color: rgb(249, 89, 26);
+  background-color: #f9461af8;
 }
 
-button:hover {
+.btn:hover {
   opacity: 0.8;
 }
 

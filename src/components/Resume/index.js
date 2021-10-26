@@ -18,10 +18,11 @@ function Resume() {
         <h3>Backend:</h3>
         <li>MySQL </li>
         <li>MongoDB </li>
+        <li>Stripe</li>
         <li>Express.js </li>
-        <li>Node.js </li>
+        <li>Node.js</li>
         <li>Handlebars.js </li>
-        <li>GraphQL </li>
+        <li>GraphQL</li>
       </div>
       <a
         style={{ textDecoration: "none" }}

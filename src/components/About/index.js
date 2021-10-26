@@ -13,11 +13,11 @@ function About() {
       <p>
         {" "}
         Welcome to my tiny space in the World Wide Web! Let me briefly introduce
-        myself. My name is Maria Mireles, a 24-year-old coffee-lover. I am soon
-        to complete a fully remote coding boot camp through the University of
+        myself. My name is Maria Mireles, a 24-year-old coffee-lover. I have a 
+        Full Stack Web Developement (MERN) certification  through the University of
         Texas at Austin. Despite having no prior coding experience, I have been
         able to expand my front-end and back-end programming skills
-        and abilities. To date, I have been coding for about 5 months. 
+        and abilities.
         Look around and feel free to reach out. Let us chat some code!{" "}
       </p>
     </section>
