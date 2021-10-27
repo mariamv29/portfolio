@@ -39,57 +39,77 @@ function ContactForm() {
   };
 
   return (
-    <section>
-      <form id="contact-form" onSubmit={handleSubmit}>
+    <section className="cotainer">
+      <form action="action_page.php" id="contact-form" onSubmit={handleSubmit}>
         <h1 id="contact-text">Contact</h1>
-        <div>
-          <label htmlFor="name" style={{ color: "white" }}>
-            Name:
-          </label>
-          <input
-            style={{ backgroundColor: "white", width: "600px", height: "35px" }}
-            type="text"
-            name="name"
-            defaultValue={name}
-            onBlur={handleChange}
-          />
+        <div class="row">
+          <div class="col-25">
+            <label htmlFor="name" 
+            // style={{ color: "white" }}
+            >
+              Name:
+            </label>
+          </div>
+          <div class="col-75">
+            <input
+              // style={{ backgroundColor: "white", width: "82ch", height: "35px"}}
+              type="text"
+              name="name"
+              defaultValue={name}
+              onBlur={handleChange}
+            />
+          </div>
         </div>
-        <div>
-          <label htmlFor="email" style={{ color: "white" }}>
-            Email:
-          </label>
-          <input
-            style={{ backgroundColor: "white", width: "600px", height: "35px" }}
-            type="email"
-            name="email"
-            defaultValue={email}
-            onBlur={handleChange}
-          />
+        <div class="row">
+          <div class="col-25">
+            <label htmlFor="email" 
+            // style={{ color: "white" }}
+            >
+              Email:
+            </label>
+          </div>
+          <div class="col-75">
+            <input
+             
+              type="email"
+              name="email"
+              defaultValue={email}
+              onBlur={handleChange}
+            />
+          </div>
         </div>
-        <div>
-          <label htmlFor="message" style={{ color: "white" }}>
-            Message:
-          </label>
-          <textarea
-            style={{
-              backgroundColor: "white",
-              width: "600px",
-              height: "120px",
-            }}
-            name="message"
-            rows="5"
-            defaultValue={message}
-            onBlur={handleChange}
-          />
+        <div class="row">
+          <div class="col-25">
+            <label htmlFor="message" 
+            // style={{ color: "white" }}
+            >
+              Message:
+            </label>
+          </div>
+          <div class="col-75">
+            <textarea
+              // style={{
+              //   backgroundColor: "white",
+              //   width: "76ch",
+              //   height: "120px",
+              // }}
+              name="message"
+              rows="5"
+              defaultValue={message}
+              onBlur={handleChange}
+            />
+          </div>
         </div>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit" className="btn">
-          Submit
-        </button>
+        <div class="row">
+          <button data-testid="button" type="submit" className="btn">
+            Submit
+          </button>
+        </div>
       </form>
     </section>
   );
