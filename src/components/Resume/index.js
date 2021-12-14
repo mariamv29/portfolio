@@ -3,6 +3,11 @@ import React from "react";
 function Resume() {
   return (
     <section className="resume">
+          <div className="download">
+        <a href="resume.pdf" download >
+          <strong>Download my resume!</strong>
+        </a>
+      </div>
       <div className="languages">
         <h3> Frontend: </h3>
         <li>React </li>
@@ -24,11 +29,7 @@ function Resume() {
         <li>Handlebars.js </li>
         <li>GraphQL</li>
       </div>
-      <div className="download">
-        <a href="resume.pdf" download >
-          <strong>Download my resume!</strong>
-        </a>
-      </div>
+  
     </section>
   );
 }

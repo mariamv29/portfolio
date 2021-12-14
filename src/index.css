@@ -73,7 +73,7 @@ p,
 .intro {
   color: var(--primary);
 }
-/*PORTFOLIO STYILING*/
+/*PORTFOLIO STYLING*/
 
 .cards {
   margin-top: 10vw;
@@ -155,7 +155,7 @@ textarea {
 
 /*RESUME STYLES*/
 .languages {
-  margin-top: 15vw;
+  margin-top: 5vw;
   width: 60%;
   margin-left: 20vw;
   height: 28vh;
@@ -181,8 +181,8 @@ textarea {
 }
 
 .download {
-  padding-top: 5%;
-  margin-left: 43vw;
+margin-top: 8vw;
+align-content: center;
 }
 .download,
 a {
