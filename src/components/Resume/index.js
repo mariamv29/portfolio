@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function Resume() {
   return (
     <section className="resume">
@@ -26,13 +25,8 @@ function Resume() {
         <li>GraphQL</li>
       </div>
 
-      <a
-        style={{ textDecoration: "none" }}
-        href="../../assets/resume/resume.pdf"
-        download
-      >
-        <a href="resume.pdf" download className="download"><strong>Download my resume!</strong></a>
-
+      <a href="resume.pdf" download className="download">
+        <strong>Download my resume!</strong>
       </a>
     </section>
   );
