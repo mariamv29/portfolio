@@ -1,5 +1,5 @@
 import React from "react";
-import { Document } from 'react-pdf' 
+
 
 function Resume() {
   return (
@@ -25,13 +25,14 @@ function Resume() {
         <li>Handlebars.js </li>
         <li>GraphQL</li>
       </div>
-      <Document file="../../assets/resume/resume.pdf" />
+
       <a
         style={{ textDecoration: "none" }}
         href="../../assets/resume/resume.pdf"
         download
       >
-        <h2 className="download"> Click to download resume</h2>
+        <a href="resume.pdf" download className="download"><strong>Download my resume!</strong></a>
+
       </a>
     </section>
   );
