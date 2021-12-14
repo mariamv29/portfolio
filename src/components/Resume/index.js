@@ -24,10 +24,11 @@ function Resume() {
         <li>Handlebars.js </li>
         <li>GraphQL</li>
       </div>
-
-      <a href="resume.pdf" download className="download">
-        <strong>Download my resume!</strong>
-      </a>
+      <div className="download">
+        <a href="resume.pdf" download >
+          <strong>Download my resume!</strong>
+        </a>
+      </div>
     </section>
   );
 }

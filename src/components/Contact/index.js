@@ -1,117 +1,76 @@
 import React, { useState } from "react";
-// import Box from "@mui/material/Box";
-// import TextField from "@mui/material/TextField";
-import { validateEmail } from "../../utils/helpers";
+import { send } from "emailjs-com";
 
 function ContactForm() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
+  const [toSend, setToSend] = useState({
+    from_name: "",
+    to_name: "",
     message: "",
+    reply_to: "",
   });
 
-  const [errorMessage, setErrorMessage] = useState("");
-  const { name, email, message } = formState;
-
-  const handleSubmit = (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
-    if (!errorMessage) {
-      setFormState({ [e.target.name]: e.target.value });
-      console.log("Form", formState);
-    }
+    send(
+      "service_ho4m6nf",
+      "template_zmhs6gr",
+      toSend,
+      "user_LcYkUo0ZXmuY94CEhQoj6"
+    )
+      .then((response) => {
+        window.alert("Your message has been sent", response.text);
+      })
+      .catch((err) => {
+        window.prompt("Your message failed to sent, try again...", err);
+      });
   };
 
   const handleChange = (e) => {
-    if (e.target.name === "email") {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage("Your email is invalid.");
-      } else {
-        setErrorMessage("");
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`Message is required.`);
-      } else {
-        setErrorMessage("");
-      }
-    }
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
   return (
-    <section className="cotainer">
-      <form action="action_page.php" id="contact-form" onSubmit={handleSubmit}>
+    <div className="cotainer">
+      <form className="contact-form" onSubmit={onSubmit}>
         <h1 id="contact-text">Contact</h1>
-        <div class="row">
-          <div class="col-25">
-            <label htmlFor="name" 
-            // style={{ color: "white" }}
-            >
-              Name:
-            </label>
-          </div>
-          <div class="col-75">
-            <input
-              // style={{ backgroundColor: "white", width: "82ch", height: "35px"}}
-              type="text"
-              name="name"
-              defaultValue={name}
-              onBlur={handleChange}
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label htmlFor="email" 
-            // style={{ color: "white" }}
-            >
-              Email:
-            </label>
-          </div>
-          <div class="col-75">
-            <input
-             
-              type="email"
-              name="email"
-              defaultValue={email}
-              onBlur={handleChange}
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label htmlFor="message" 
-            // style={{ color: "white" }}
-            >
-              Message:
-            </label>
-          </div>
-          <div class="col-75">
-            <textarea
-              // style={{
-              //   backgroundColor: "white",
-              //   width: "76ch",
-              //   height: "120px",
-              // }}
-              name="message"
-              rows="5"
-              defaultValue={message}
-              onBlur={handleChange}
-            />
-          </div>
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-        <div class="row">
-          <button data-testid="button" type="submit" className="btn">
-            Submit
-          </button>
-        </div>
+
+        <input
+          type="text"
+          name="from_name"
+          placeholder="From"
+          value={toSend.from_name}
+          onChange={handleChange}
+        />
+
+        <input
+          type="text"
+          name="to_name"
+          placeholder="To"
+          value={toSend.to_name}
+          onChange={handleChange}
+        />
+
+        <input
+          type="text"
+          name="reply_to"
+          placeholder="Your email"
+          value={toSend.reply_to}
+          onChange={handleChange}
+        />
+        <textarea
+          type="text"
+          name="message"
+          rows={5}
+          placeholder="Your message"
+          value={toSend.message}
+          onChange={handleChange}
+        />
+
+        <button type="submit" className="btn">
+          Submit
+        </button>
       </form>
-    </section>
+    </div>
   );
 }
 

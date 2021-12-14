@@ -118,7 +118,7 @@ p,
 
 /*CONTACT FORM STYLING*/
 
-#contact-form {
+.contact-form {
   justify-content: center;
   margin-top: 10vw;
   width: 60%;
@@ -130,27 +130,22 @@ p,
   backdrop-filter: blur(40px);
   block-size: fit-content;
 }
+
+.contact-text {
+  padding: 14px;
+}
+
 input,
-select,
 textarea {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
+  margin: 8px 5px 8px 5px;
 }
 
-label {
-  color: white;
-  padding: 8px 8px 12px 0;
-  display: inline-block;
-}
-
-.col-75 {
-  float: left;
-  width: 95%;
-}
 
 .row:after {
   content: "";
@@ -158,6 +153,7 @@ label {
   clear: both;
 }
 
+/*RESUME STYLES*/
 .languages {
   margin-top: 15vw;
   width: 60%;
@@ -184,13 +180,15 @@ label {
   color: var(--primary);
 }
 
-.resume {
-  margin-bottom: 20vw;
-}
 .download {
+  padding-top: 5%;
+  margin-left: 43vw;
+}
+.download,
+a {
+  text-decoration: none;
+  color: inherit;
   color: #f9461af8;
-  margin-top: 4vw;
-  margin-left: 46vw;
 }
 
 .btn {
@@ -236,7 +234,6 @@ footer {
   text-align: center;
   text-decoration: none;
 }
-
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
