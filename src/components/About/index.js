@@ -9,7 +9,7 @@ function About() {
       <img
         alt="Maria Mireles"
         src={image}
-        style={{ width: "300px", height: "260px", display: "block", margin: "auto", marginTop: "16vw", borderStyle: "solid" }}
+        style={{ width: "300px", height: "260px", display: "block", margin: "auto", marginTop: "8vw", borderStyle: "solid" }}
       />
       <section className="box">
         <Stack direction="row" spacing={2}>
