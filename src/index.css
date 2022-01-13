@@ -57,13 +57,12 @@ header nav ul li a:hover {
 
 .box {
   font-size: 18px;
-  margin-top: 20vw;
+  margin-top: 2vw;
   width: 60%;
   margin-left: 20vw;
-  height: 30vh;
   border-style: solid;
   border-width: 8px;
-  padding: 10px;
+  padding: 40px;
   backdrop-filter: blur(40px);
   display: block;
   block-size: fit-content;
@@ -72,6 +71,7 @@ header nav ul li a:hover {
 p,
 .intro {
   color: var(--primary);
+  margin: 0px, 10px, 10px, 10px;
 }
 /*PORTFOLIO STYLING*/
 
